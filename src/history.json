@@ -418,6 +418,26 @@
    "l_pts": null,
    "played": "2026-09-14",
    "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Lincoln Park Pub 1 (LPP1) beat Vibe 1 (VBE1), 80-66",
+   "posted": "Nov 3, 2026 2:33 am",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "Vibe 1 (VBE1)",
+   "w_pts": 80,
+   "l_pts": 66,
+   "played": null,
+   "seen_at": "2026-11-02T21:34:31.381566-05:00"
+  },
+  {
+   "title": "Turners 1 (TSC1) beat Cocktails 1 (CT1), 76-72",
+   "posted": "Nov 3, 2026 2:29 am",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Cocktails 1 (CT1)",
+   "w_pts": 76,
+   "l_pts": 72,
+   "played": null,
+   "seen_at": "2026-11-02T21:34:31.381566-05:00"
   }
  ]
 }
