@@ -1221,6 +1221,21 @@ head, body = page.split('<div class="wrap">', 1)
 doc = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
        '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
        '<meta name="theme-color" content="#0f2a1f">'
+       '<meta property="og:type" content="website">'
+       '<meta property="og:site_name" content="LPP2 Pool League">'
+       '<meta property="og:title" content="LPP2 · Lincoln Park Pub 2">'
+       '<meta property="og:description" content="Shooters Pool League \'26: standings, schedule, who\'s in, player stats, and the rules cheat sheet.">'
+       '<meta property="og:url" content="https://jakevanderkar3434.github.io/lpp2-pool/">'
+       '<meta property="og:image" content="https://jakevanderkar3434.github.io/lpp2-pool/assets/og.png">'
+       '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+       '<meta property="og:image:alt" content="Gold 2-ball next to the letters LPP2">'
+       '<meta name="twitter:card" content="summary_large_image">'
+       '<meta name="twitter:title" content="LPP2 · Lincoln Park Pub 2">'
+       '<meta name="twitter:image" content="https://jakevanderkar3434.github.io/lpp2-pool/assets/og.png">'
+       '<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">'
+       '<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">'
+       '<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">'
+       '<meta name="apple-mobile-web-app-title" content="LPP2">'
        + head + '</head><body><div class="wrap">' + body + '</body></html>')
 open(OUT, "w").write(doc)
 print("built", OUT, len(page), "bytes;", "next:", next_match and next_match["label"], "| record", me["wins"], me["losses"])
