@@ -1,4 +1,13 @@
 {
  "_comment": "avail_url = the Google Apps Script web app URL (ends in /exec). Leave empty until deployed.",
- "avail_url": "https://script.google.com/macros/s/AKfycbwBh7y07XfOSPaf0CPo8qWd3c-iDNRlK5uupAwPgJCbWwRRqoozkCebF9Hn5y3m20r3qg/exec"
+ "avail_url": "https://script.google.com/macros/s/AKfycbwBh7y07XfOSPaf0CPo8qWd3c-iDNRlK5uupAwPgJCbWwRRqoozkCebF9Hn5y3m20r3qg/exec",
+ "roster": [
+  "Aidan Roberts",
+  "Isaiah Barnett",
+  "Jake VanDerkar",
+  "Mark Lance",
+  "Matt Kostura",
+  "Seth King"
+ ],
+ "_roster_note": "Names as they appear (or will appear) on the league site. Players not yet in league stats get a 'new' card."
 }

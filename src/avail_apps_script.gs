@@ -9,7 +9,7 @@
  */
 var SHEET_ID = "";          // optional: paste a spreadsheet ID here
 var SHEET_NAME = "avail";
-var ALLOWED = ["aidan-roberts","isaiah-barnett","jake-vanderkar","matt-kostura","seth-king"];
+var ALLOWED = ["aidan-roberts","isaiah-barnett","jake-vanderkar","mark-lance","matt-kostura","seth-king"];
 
 function getSheet_() {
   var ss = SHEET_ID ? SpreadsheetApp.openById(SHEET_ID) : SpreadsheetApp.getActiveSpreadsheet();

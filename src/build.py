@@ -12,7 +12,8 @@ CFG = os.path.join(HERE, "config.json")
 SOURCE_URL = "https://shooterspool.appleague.io/league/41766977-7dfa-467e-b24f-91b2f8b5d5aa"
 
 TEAM = "Lincoln Park Pub 2 (LPP2)"
-ROSTER_IDS = [24, 25, 26, 27, 28]  # Aidan, Isaiah, Jake, Matt, Seth
+ROSTER_NAMES_DEFAULT = ["Aidan Roberts", "Isaiah Barnett", "Jake VanDerkar", "Matt Kostura", "Seth King"]
+ROSTER_IDS = []  # resolved from ROSTER_NAMES after league data loads
 TZ = ZoneInfo("America/New_York")
 
 raw = json.load(open(LEAGUE))
@@ -75,6 +76,11 @@ config = {}
 if os.path.exists(CFG):
     config = json.load(open(CFG))
 AVAIL_URL = config.get("avail_url", "")
+
+ROSTER_NAMES = config.get("roster", ROSTER_NAMES_DEFAULT)
+_byname = {p["name"].strip().lower(): p["id"] for p in L["player_standings"]}
+ROSTER_IDS = [_byname[n.strip().lower()] for n in ROSTER_NAMES if n.strip().lower() in _byname]
+UNLISTED = [n for n in ROSTER_NAMES if n.strip().lower() not in _byname]  # on our roster but not in league stats yet
 
 overrides = {}
 if os.path.exists(OVR):
@@ -195,6 +201,8 @@ for pid in ROSTER_IDS:
         "avg": (sum(g["points"] for g in games) / len(games)) if games else 0,
         "weekly": weekly,
     })
+for n in UNLISTED:
+    players.append({"id": 0, "name": n, "pts": 0, "rank": None, "games": 0, "wins": 0, "losses": 0, "avg": 0, "weekly": {}, "unlisted": True})
 players.sort(key=lambda p: -p["pts"])
 
 top_players = sorted(pstand, key=lambda p: -p["total_points"])[:10]
@@ -288,7 +296,7 @@ for p in players:
     first = p["name"].split()[0]
     pcards.append(f"""
     <article class="pcard" data-id="{p['id']}" tabindex="0" role="button" aria-label="Show game-by-game stats for {esc(p['name'])}">
-      <header><h3>{esc(p['name'])}</h3><span class="prank">#{p['rank']} <small>of {len(pstand)}</small></span></header>
+      <header><h3>{esc(p['name'])}</h3><span class="prank">{('#' + str(p['rank']) + ' <small>of ' + str(len(pstand)) + '</small>') if p.get('rank') else '<small>new</small>'}</span></header>
       <div class="pbig"><span class="num">{p['pts']}</span><span class="lbl">points</span></div>
       <dl class="pstats">
         <div><dt>Games</dt><dd>{p['wins']}–{p['losses']}</dd></div>
@@ -346,6 +354,9 @@ team_weekly_json = json.dumps([{"label": l, "pts": p, "ff": k == "ff", "official
 opp_by_week = {g["label"]: {"opp": short(g["opp"]), "home": g["home"], "venue": g["venue"]} for g in our_sched}
 player_detail = []
 for p in players:
+    if p.get("unlisted"):
+        player_detail.append({"id": 0, "name": p["name"], "pts": 0, "rank": 0, "wins": 0, "losses": 0, "avg": 0, "weeks": []})
+        continue
     weeks = []
     for w in ph.get(str(p["id"]), []):
         if not w["games"]: continue
@@ -779,9 +790,9 @@ script_js = r"""
   /* ---- player detail modal ---- */
   var dlg=document.getElementById('pmodal'), pmBody=document.getElementById('pm-body'), pmName=document.getElementById('pm-name'), pmSum=document.getElementById('pm-sum');
   function openPlayer(id){
-    var p=PLAYERS.find(function(x){return x.id===id}); if(!p) return;
+    var p=PLAYERS.find(function(x){return String(x.id)===String(id)}); if(!p) return;
     pmName.textContent=p.name;
-    pmSum.textContent="#"+p.rank+" in the league · "+p.pts+" pts · "+p.wins+"–"+p.losses+" in games · "+p.avg.toFixed(1)+" avg";
+    pmSum.textContent=p.rank?("#"+p.rank+" in the league · "+p.pts+" pts · "+p.wins+"–"+p.losses+" in games · "+p.avg.toFixed(1)+" avg"):"New to the roster · no league games recorded yet";
     if(!p.weeks.length){ pmBody.innerHTML="<p class='pm-empty'>No games recorded yet for "+p.name.split(' ')[0]+".</p>"; }
     else{
       var best=Math.max.apply(null,p.weeks.map(function(w){return w.games.reduce(function(a,g){return a+g.pts},0)}));
@@ -799,8 +810,8 @@ script_js = r"""
     if(typeof dlg.showModal==='function') dlg.showModal(); else dlg.setAttribute('open','');
   }
   document.querySelectorAll('.pcard').forEach(function(c){
-    c.addEventListener('click',function(){openPlayer(+c.dataset.id)});
-    c.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();openPlayer(+c.dataset.id);} });
+    c.addEventListener('click',function(){openPlayer(c.dataset.id)});
+    c.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();openPlayer(c.dataset.id);} });
   });
   document.getElementById('pm-close').addEventListener('click',function(){dlg.close()});
   dlg.addEventListener('click',function(e){ if(e.target===dlg) dlg.close(); });
