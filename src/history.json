@@ -1,0 +1,423 @@
+{
+ "results": [
+  {
+   "title": "Vibe 2 (VBE2) beat Cocktails 2 (CT2), 78-48",
+   "posted": "Oct 5, 2026 12:01 pm",
+   "winner": "Vibe 2 (VBE2)",
+   "loser": "Cocktails 2 (CT2)",
+   "w_pts": 78,
+   "l_pts": 48,
+   "seen_at": "2026-10-05T16:24:40.461234-04:00"
+  },
+  {
+   "title": "Lincoln Park Pub 1 (LPP1) beat Lincoln Park Pub 2 (LPP2), 74-51",
+   "posted": "Oct 5, 2026 12:00 pm",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 74,
+   "l_pts": 51,
+   "seen_at": "2026-10-05T16:24:40.461234-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Leather Stallion Saloon (LSS), 73-61",
+   "posted": "Oct 6, 2026 8:48 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Leather Stallion Saloon (LSS)",
+   "w_pts": 73,
+   "l_pts": 61,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Vibe 2 (VBE2), 111-50",
+   "posted": "Oct 6, 2026 8:47 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Vibe 2 (VBE2)",
+   "w_pts": 111,
+   "l_pts": 50,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Vibe 1 (VBE1), 109-58",
+   "posted": "Oct 6, 2026 8:47 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Vibe 1 (VBE1)",
+   "w_pts": 109,
+   "l_pts": 58,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Turners 1 (TSC1) beat Cocktails 2 (CT2), 79-55",
+   "posted": "Oct 6, 2026 8:45 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Cocktails 2 (CT2)",
+   "w_pts": 79,
+   "l_pts": 55,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Vibe 2 (VBE2) beat Lincoln Park Pub 1 (LPP1), 69-68",
+   "posted": "Oct 6, 2026 8:44 pm",
+   "winner": "Vibe 2 (VBE2)",
+   "loser": "Lincoln Park Pub 1 (LPP1)",
+   "w_pts": 69,
+   "l_pts": 68,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "FLEX beat Cocktails 1 (CT1), 80-71",
+   "posted": "Oct 6, 2026 8:42 pm",
+   "winner": "FLEX",
+   "loser": "Cocktails 1 (CT1)",
+   "w_pts": 80,
+   "l_pts": 71,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Leather Stallion Saloon (LSS) beat Lincoln Park Pub 2 (LPP2), 70-63",
+   "posted": "Oct 6, 2026 8:40 pm",
+   "winner": "Leather Stallion Saloon (LSS)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 70,
+   "l_pts": 63,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Vibe 1 (VBE1) beat Turners 2 (TSC2), 74-72",
+   "posted": "Oct 6, 2026 8:37 pm",
+   "winner": "Vibe 1 (VBE1)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": 74,
+   "l_pts": 72,
+   "seen_at": "2026-10-07T08:54:08.815829-04:00"
+  },
+  {
+   "title": "Leather Stallion Saloon (LSS) beat Turners 2 (TSC2), 90-55",
+   "posted": "Oct 13, 2026 3:11 am",
+   "winner": "Leather Stallion Saloon (LSS)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": 90,
+   "l_pts": 55,
+   "seen_at": "2026-10-14T08:53:20.952334-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Lincoln Park Pub 2 (LPP2), 83-62",
+   "posted": "Oct 13, 2026 3:10 am",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 83,
+   "l_pts": 62,
+   "seen_at": "2026-10-14T08:53:20.952334-04:00"
+  },
+  {
+   "title": "Lincoln Park Pub 1 (LPP1) beat FLEX, 79-63",
+   "posted": "Oct 13, 2026 3:07 am",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "FLEX",
+   "w_pts": 79,
+   "l_pts": 63,
+   "seen_at": "2026-10-14T08:53:20.952334-04:00"
+  },
+  {
+   "title": "Cocktails 2 (CT2) beat Vibe 1 (VBE1), 96-55",
+   "posted": "Oct 13, 2026 3:06 am",
+   "winner": "Cocktails 2 (CT2)",
+   "loser": "Vibe 1 (VBE1)",
+   "w_pts": 96,
+   "l_pts": 55,
+   "seen_at": "2026-10-14T08:53:20.952334-04:00"
+  },
+  {
+   "title": "Turners 1 (TSC1) beat Vibe 2 (VBE2), 87-54",
+   "posted": "Oct 13, 2026 1:11 am",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Vibe 2 (VBE2)",
+   "w_pts": 87,
+   "l_pts": 54,
+   "seen_at": "2026-10-14T08:53:20.952334-04:00"
+  },
+  {
+   "title": "Turners 2 (TSC2) beat Lincoln Park Pub 2 (LPP2), 90-0",
+   "posted": "Oct 20, 2026 3:11 am",
+   "winner": "Turners 2 (TSC2)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 90,
+   "l_pts": 0,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Turners 1 (TSC1) beat FLEX, 74-64",
+   "posted": "Oct 19, 2026 7:00 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "FLEX",
+   "w_pts": 74,
+   "l_pts": 64,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Lincoln Park Pub 1 (LPP1), 76-73",
+   "posted": "Oct 19, 2026 7:00 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Lincoln Park Pub 1 (LPP1)",
+   "w_pts": 76,
+   "l_pts": 73,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Cocktails 2 (CT2) beat Leather Stallion Saloon (LSS), 74-67",
+   "posted": "Oct 19, 2026 7:00 pm",
+   "winner": "Cocktails 2 (CT2)",
+   "loser": "Leather Stallion Saloon (LSS)",
+   "w_pts": 74,
+   "l_pts": 67,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Vibe 1 (VBE1) beat Vibe 2 (VBE2), 79-55",
+   "posted": "Oct 19, 2026 7:00 pm",
+   "winner": "Vibe 1 (VBE1)",
+   "loser": "Vibe 2 (VBE2)",
+   "w_pts": 79,
+   "l_pts": 55,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Turners 1 (TSC1) beat Vibe 2 (VBE2), 87-54",
+   "posted": "Oct 12, 2026 7:00 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Vibe 2 (VBE2)",
+   "w_pts": 87,
+   "l_pts": 54,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Cocktails 2 (CT2) beat Vibe 1 (VBE1), 96-55",
+   "posted": "Oct 12, 2026 7:00 pm",
+   "winner": "Cocktails 2 (CT2)",
+   "loser": "Vibe 1 (VBE1)",
+   "w_pts": 96,
+   "l_pts": 55,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Lincoln Park Pub 1 (LPP1) beat FLEX, 79-63",
+   "posted": "Oct 12, 2026 7:00 pm",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "FLEX",
+   "w_pts": 79,
+   "l_pts": 63,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Lincoln Park Pub 2 (LPP2), 83-62",
+   "posted": "Oct 12, 2026 7:00 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 83,
+   "l_pts": 62,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Leather Stallion Saloon (LSS) beat Turners 2 (TSC2), 90-55",
+   "posted": "Oct 12, 2026 7:00 pm",
+   "winner": "Leather Stallion Saloon (LSS)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": 90,
+   "l_pts": 55,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Leather Stallion Saloon (LSS), 73-61",
+   "posted": "Sep 28, 2026 7:00 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Leather Stallion Saloon (LSS)",
+   "w_pts": 73,
+   "l_pts": 61,
+   "seen_at": "2026-10-21T08:53:43.590256-04:00"
+  },
+  {
+   "title": "FLEX beat Vibe 1 (VBE1), 81-66",
+   "posted": "Oct 27, 2026 6:06 pm",
+   "winner": "FLEX",
+   "loser": "Vibe 1 (VBE1)",
+   "w_pts": 81,
+   "l_pts": 66,
+   "seen_at": "2026-10-28T08:55:12.137960-04:00"
+  },
+  {
+   "title": "Turners 1 (TSC1) beat Lincoln Park Pub 1 (LPP1), 80-71",
+   "posted": "Oct 27, 2026 5:56 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Lincoln Park Pub 1 (LPP1)",
+   "w_pts": 80,
+   "l_pts": 71,
+   "seen_at": "2026-10-28T08:55:12.137960-04:00"
+  },
+  {
+   "title": "Cocktails 1 (CT1) beat Turners 2 (TSC2), 82-74",
+   "posted": "Oct 27, 2026 5:56 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": 82,
+   "l_pts": 74,
+   "seen_at": "2026-10-28T08:55:12.137960-04:00"
+  },
+  {
+   "title": "Vibe 2 (VBE2) beat Leather Stallion Saloon (LSS), 70-69",
+   "posted": "Oct 27, 2026 5:56 pm",
+   "winner": "Vibe 2 (VBE2)",
+   "loser": "Leather Stallion Saloon (LSS)",
+   "w_pts": 70,
+   "l_pts": 69,
+   "seen_at": "2026-10-28T08:55:12.137960-04:00"
+  },
+  {
+   "title": "Cocktails 2 (CT2) beat Lincoln Park Pub 2 (LPP2), 82-46",
+   "posted": "Oct 27, 2026 5:46 pm",
+   "winner": "Cocktails 2 (CT2)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 82,
+   "l_pts": 46,
+   "seen_at": "2026-10-28T08:55:12.137960-04:00"
+  },
+  {
+   "title": "Match Results: September 28: Vibe 1 (VBE1) beat Lincoln Park Pub 2 (LPP2)",
+   "posted": "Sep 28, 2026 7:00 pm",
+   "winner": "Vibe 1 (VBE1)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-28",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 28: FLEX beat Vibe 2 (VBE2)",
+   "posted": "Sep 28, 2026 7:00 pm",
+   "winner": "FLEX",
+   "loser": "Vibe 2 (VBE2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-28",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 28: Lincoln Park Pub 1 (LPP1) beat Cocktails 2 (CT2)",
+   "posted": "Sep 28, 2026 7:00 pm",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "Cocktails 2 (CT2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-28",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 28: Turners 1 (TSC1) beat Turners 2 (TSC2)",
+   "posted": "Sep 28, 2026 7:00 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-28",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 21: FLEX beat Cocktails 2 (CT2)",
+   "posted": "Sep 21, 2026 7:00 pm",
+   "winner": "FLEX",
+   "loser": "Cocktails 2 (CT2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-21",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 21: Lincoln Park Pub 1 (LPP1) beat Turners 2 (TSC2)",
+   "posted": "Sep 21, 2026 7:00 pm",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-21",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 21: Vibe 1 (VBE1) beat Leather Stallion Saloon (LSS)",
+   "posted": "Sep 21, 2026 7:00 pm",
+   "winner": "Vibe 1 (VBE1)",
+   "loser": "Leather Stallion Saloon (LSS)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-21",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 21: Turners 1 (TSC1) beat Lincoln Park Pub 2 (LPP2)",
+   "posted": "Sep 21, 2026 7:00 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-21",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 21: Cocktails 1 (CT1) beat Vibe 2 (VBE2)",
+   "posted": "Sep 21, 2026 7:00 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Vibe 2 (VBE2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-21",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 14: Turners 1 (TSC1) beat Leather Stallion Saloon (LSS)",
+   "posted": "Sep 14, 2026 7:00 pm",
+   "winner": "Turners 1 (TSC1)",
+   "loser": "Leather Stallion Saloon (LSS)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-14",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 14: Lincoln Park Pub 1 (LPP1) beat Lincoln Park Pub 2 (LPP2)",
+   "posted": "Sep 14, 2026 7:00 pm",
+   "winner": "Lincoln Park Pub 1 (LPP1)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-14",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 14: Vibe 2 (VBE2) beat Cocktails 2 (CT2)",
+   "posted": "Sep 14, 2026 7:00 pm",
+   "winner": "Vibe 2 (VBE2)",
+   "loser": "Cocktails 2 (CT2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-14",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 14: Cocktails 1 (CT1) beat Vibe 1 (VBE1)",
+   "posted": "Sep 14, 2026 7:00 pm",
+   "winner": "Cocktails 1 (CT1)",
+   "loser": "Vibe 1 (VBE1)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-14",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  },
+  {
+   "title": "Match Results: September 14: FLEX beat Turners 2 (TSC2)",
+   "posted": "Sep 14, 2026 7:00 pm",
+   "winner": "FLEX",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": null,
+   "l_pts": null,
+   "played": "2026-09-14",
+   "seen_at": "2026-11-02T21:08:05.772981-05:00"
+  }
+ ]
+}

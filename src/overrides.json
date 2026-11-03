@@ -1,0 +1,13 @@
+{
+ "_comment": "Manual corrections keyed by match label (e.g. 'Sep 28'). Fields: forfeit (bool), result 'W'/'L', us, them, note.",
+ "Sep 28": {
+  "forfeit": true,
+  "result": "L",
+  "note": "Forfeit"
+ },
+ "Sep 21": {
+  "result": "L",
+  "us": 49,
+  "note": "Opponent score not posted; 49 is our roster's points that week"
+ }
+}
