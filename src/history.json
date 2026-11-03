@@ -438,6 +438,26 @@
    "l_pts": 72,
    "played": null,
    "seen_at": "2026-11-02T21:36:11.329572-05:00"
+  },
+  {
+   "title": "Vibe 2 (VBE2) beat Lincoln Park Pub 2 (LPP2), 84-36",
+   "posted": "Nov 3, 2026 2:52 am",
+   "winner": "Vibe 2 (VBE2)",
+   "loser": "Lincoln Park Pub 2 (LPP2)",
+   "w_pts": 84,
+   "l_pts": 36,
+   "played": null,
+   "seen_at": "2026-11-03T18:28:19.041805-05:00"
+  },
+  {
+   "title": "Cocktails 2 (CT2) beat Turners 2 (TSC2), 78-76",
+   "posted": "Nov 3, 2026 2:38 am",
+   "winner": "Cocktails 2 (CT2)",
+   "loser": "Turners 2 (TSC2)",
+   "w_pts": 78,
+   "l_pts": 76,
+   "played": null,
+   "seen_at": "2026-11-03T18:28:19.041805-05:00"
   }
  ]
 }
