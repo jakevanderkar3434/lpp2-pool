@@ -656,9 +656,67 @@ table.eight .ok{color:var(--win);font-weight:700} table.eight .bad{color:var(--l
 .safety{background:var(--felt-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
 .safety ol{margin:0;padding-left:1.2rem;font-size:.92rem;color:var(--chalk-2);display:grid;gap:8px}
 .safety li b{color:var(--chalk)}
+.rackcard{background:var(--felt-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:16px;align-items:start}
+.rackcard svg{width:100%;height:auto;max-width:100%;display:block}
+.rackcard ol{margin:0;padding-left:1.2rem;font-size:.92rem;color:var(--chalk-2);display:grid;gap:8px}
+.rackcard li b{color:var(--chalk)}
+.rk-num{font:800 15px var(--display);fill:#111}
+.rk-lbl{font:600 11px var(--body);fill:var(--muted)}
+@media (max-width:520px){ .rackcard{grid-template-columns:1fr} .rackcard svg{max-width:260px;margin:0 auto} }
 @media (max-width:600px){ .loss ul{columns:1} }
 """
 extra_css += rules_css
+
+# ---------- rack diagram (Rule 3) ----------
+BALL_COLORS = {1:"#f2c02c",2:"#1f5fbf",3:"#d9342b",4:"#6b3fa0",5:"#f28c28",6:"#1f8a4c",7:"#8b1e2d",8:"#111111",
+               9:"#f2c02c",10:"#1f5fbf",11:"#d9342b",12:"#6b3fa0",13:"#f28c28",14:"#1f8a4c",15:"#8b1e2d"}
+RACK_ROWS = [[1],[9,2],[10,8,3],[4,14,7,12],[11,6,15,13,5]]  # apex at top (foot spot), 8 center, back corners 11 (stripe) + 5 (solid)
+
+def rack_svg():
+    r = 22; dx = r*2+4; dy = dx*0.87
+    W = 5*dx + 40; H = 5*dy + 70
+    out = [f'<svg viewBox="0 0 {W:.0f} {H:.0f}" role="img" aria-labelledby="rack-title" class="rack">',
+           '<title id="rack-title">How to rack: 1 ball on the foot spot, 8 in the center, a stripe and a solid in the back corners</title>',
+           '<defs><clipPath id="ballclip"><circle r="%d"/></clipPath></defs>' % r]
+    cx0 = W/2; cy0 = 48
+    # foot spot marker + direction label
+    out.append(f'<circle cx="{cx0:.1f}" cy="{cy0:.1f}" r="{r+6}" fill="none" stroke="var(--brass)" stroke-dasharray="4 4"/>')
+    out.append(f'<text x="{cx0:.1f}" y="16" text-anchor="middle" class="rk-lbl">▲ toward the breaker · apex on the foot spot</text>')
+    for i, row in enumerate(RACK_ROWS):
+        y = cy0 + i*dy
+        for j, n in enumerate(row):
+            x = cx0 + (j - (len(row)-1)/2)*dx
+            col = BALL_COLORS[n]
+            out.append(f'<g transform="translate({x:.1f},{y:.1f})">')
+            if n <= 8:
+                out.append(f'<circle r="{r}" fill="{col}"/>')
+            else:
+                out.append(f'<circle r="{r}" fill="#f7f3ea"/><rect x="-{r}" y="-{r*0.5:.0f}" width="{2*r}" height="{r}" fill="{col}" clip-path="url(#ballclip)"/>')
+            out.append(f'<circle r="{r*0.46:.1f}" fill="#f7f3ea"/><text y="4" text-anchor="middle" class="rk-num">{n}</text>')
+            out.append('</g>')
+    # callouts
+    yb = cy0 + 4*dy + r + 20
+    out.append(f'<text x="{cx0:.1f}" y="{yb:.0f}" text-anchor="middle" class="rk-lbl">back row: one corner stripe, the other solid</text>')
+    out.append('</svg>')
+    return "".join(out)
+
+rack_html = f"""
+    <div>
+      <h3 class="rh">How to rack (Rule 3)</h3>
+      <div class="rackcard">
+        {rack_svg()}
+        <ol>
+          <li><b>Non-breaking team racks.</b> Breaker may inspect before breaking.</li>
+          <li><b>Apex ball on the foot spot.</b> Any ball works; the 1 is customary.</li>
+          <li><b>8-ball in the center</b> (middle of the third row).</li>
+          <li><b>Back corners: one stripe, one solid.</b> Which side is which doesn't matter.</li>
+          <li><b>Everything else is random.</b> Mixing solids and stripes is normal. The layout shown is one legal example.</li>
+          <li><b>Rack tight.</b> Balls touching, apex frozen to the row behind it.</li>
+        </ol>
+      </div>
+    </div>
+"""
+
 
 rules_html = f"""
 <section id="rules">
@@ -705,6 +763,21 @@ rules_html = f"""
           <li><b>You don't need to declare a safety</b> on a shot that isn't going to pocket anything. Just play the leave; if you make a legal hit, your turn ends normally.</li>
         </ol>
         <p class="rules-foot">Why it matters: a called safety lets you dump an easy ball to leave your opponent nothing, without being forced to keep shooting from a bad position.</p>
+      </div>
+    </div>
+  </div>
+  <div class="two rules-two">
+    {rack_html}
+    <div>
+      <h3 class="rh">Breaking (Rules 4, 6–8)</h3>
+      <div class="safety">
+        <ol>
+          <li><b>Score sheet says who breaks.</b> Cue ball anywhere behind the head string.</li>
+          <li><b>Legal break:</b> pocket a ball, or send at least 4 object balls to a rail. Otherwise it's a foul and the opponent can take the table or re-rack and choose the breaker.</li>
+          <li><b>Scratch on the break:</b> foul, balls stay down, table stays open, opponent gets ball in hand <em>behind the head string</em>.</li>
+          <li><b>8 on the break:</b> win, 10-7. With a scratch: loss, 10-0.</li>
+          <li><b>Table is open after every break</b>, no matter what drops.</li>
+        </ol>
       </div>
     </div>
   </div>
