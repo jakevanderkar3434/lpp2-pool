@@ -656,8 +656,8 @@ table.eight .ok{color:var(--win);font-weight:700} table.eight .bad{color:var(--l
 .safety{background:var(--felt-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
 .safety ol{margin:0;padding-left:1.2rem;font-size:.92rem;color:var(--chalk-2);display:grid;gap:8px}
 .safety li b{color:var(--chalk)}
-.rackcard{background:var(--felt-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:16px;align-items:start}
-.rackcard svg{width:100%;height:auto;max-width:100%;display:block}
+.rackcard{background:var(--felt-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:16px;align-items:center}
+.rackcard svg{width:100%;height:auto;max-width:100%;display:block;margin:auto}
 .rackcard ol{margin:0;padding-left:1.2rem;font-size:.92rem;color:var(--chalk-2);display:grid;gap:8px}
 .rackcard li b{color:var(--chalk)}
 .rk-num{font:800 15px var(--display);fill:#111}
