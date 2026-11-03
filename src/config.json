@@ -3,11 +3,11 @@
  "avail_url": "https://script.google.com/macros/s/AKfycbwBh7y07XfOSPaf0CPo8qWd3c-iDNRlK5uupAwPgJCbWwRRqoozkCebF9Hn5y3m20r3qg/exec",
  "roster": [
   "Aidan Roberts",
-  "Isaiah Barnett",
   "Jake VanDerkar",
-  "Mark Lance",
   "Matt Kostura",
-  "Seth King"
+  "Seth King",
+  "Isaiah Barnett",
+  "Mark Lance"
  ],
- "_roster_note": "Names as they appear (or will appear) on the league site. Players not yet in league stats get a 'new' card."
+ "_roster_note": "Names as on the league site. This order is the order on the Who's In board. Players not yet in league stats get a 'new' card."
 }

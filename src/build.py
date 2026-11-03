@@ -445,7 +445,8 @@ month_names = json.dumps([datetime.date(y, mo, 1).strftime("%B %Y") for y, mo in
 upcoming = [{"id": "w" + g["dt"].strftime("%Y-%m-%d"), "label": fmt_date(g["dt"]), "opp": short(g["opp"]), "home": g["home"], "venue": g["venue"]}
             for g in our_sched if not g["past"]][:3]
 upcoming_json = json.dumps(upcoming)
-roster_json = json.dumps([{"key": re.sub(r"[^a-z0-9]+", "-", p["name"].lower()).strip("-"), "name": p["name"]} for p in sorted(players, key=lambda p: p["name"])])
+_order = {n.strip().lower(): i for i, n in enumerate(ROSTER_NAMES)}  # availability board follows config.json order
+roster_json = json.dumps([{"key": re.sub(r"[^a-z0-9]+", "-", p["name"].lower()).strip("-"), "name": p["name"]} for p in sorted(players, key=lambda p: _order.get(p["name"].strip().lower(), 99))])
 
 extra_css = """
 /* team weekly chart */
