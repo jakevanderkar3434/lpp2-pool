@@ -845,7 +845,7 @@ script_js = r"""
       var body={week:m.id, player:b.dataset.p, status:(prev.status===b.dataset.s)?'':b.dataset.s, at:new Date().toISOString()};
       state[m.id]=state[m.id]||{}; state[m.id][b.dataset.p]=body; busy=true; render();
       fetch(AVAIL_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)})
-        .then(function(r){return r.json()}).then(function(){ busy=false; load(); })
+        .then(function(r){ return r.text(); }).then(function(){ busy=false; load(); })
         .catch(function(){ busy=false; offline=true; render(); });
     });
     render(); load();

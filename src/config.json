@@ -1,4 +1,4 @@
 {
  "_comment": "avail_url = the Google Apps Script web app URL (ends in /exec). Leave empty until deployed.",
- "avail_url": ""
+ "avail_url": "https://script.google.com/macros/s/AKfycbwBh7y07XfOSPaf0CPo8qWd3c-iDNRlK5uupAwPgJCbWwRRqoozkCebF9Hn5y3m20r3qg/exec"
 }
